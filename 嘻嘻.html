@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>来找舟舟咯</title>
+  <style>
+    body {
+      background-color: pink;
+      position: relative;
+    }
+
+    h1 {
+      color: red;
+      text-align: center;
+    }
+
+    #question {
+      text-align: center;
+    }
+
+    #answer {
+      display: block;
+      margin: 0 auto;
+    }
+
+    #submit {
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      background-color: white;
+      padding: 10px 20px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+
+    /* 爱心样式 */
+  .heart {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      transform: rotate(45deg);
+    }
+
+  .heart:before,
+  .heart:after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: red;
+    }
+
+  .heart:before {
+      top: -25px;
+      left: 0;
+    }
+
+  .heart:after {
+      top: 0;
+      left: 25px;
+    }
+
+    /* 雪花样式 */
+  .snowflake {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: white;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>来找舟舟咯</h1>
+  <div id="question"></div>
+  <input type="text" id="answer">
+  <button id="submit">请点这里啦</button>
+
+  <!-- 生成多个爱心和雪花 -->
+  <div class="heart" style="top: 50px; left: 50px;"></div>
+  <div class="heart" style="top: 150px; left: 150px;"></div>
+  <div class="snowflake" style="top: 100px; left: 100px;"></div>
+  <div class="snowflake" style="top: 200px; left: 200px;"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
