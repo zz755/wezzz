@@ -58,8 +58,8 @@ function submitAnswer() {
     if (userAnswer.toLowerCase() === answers[currentQuestionNumber]) {
       currentQuestionNumber++;
       alert(responses[4]);
+      alert("希望舟舟不被家里的的问题所困扰，不被别人所说的话而定义，一直能做自己想做的事情。然后可以永远开心，舟舟包是最棒的耶");
       alert("结束咯");
-      window.open('', '', 'width=400,height=200').document.write('希望舟舟不被家里的的问题所困扰，不被别人所说的话而定义，一直能做自己想做的事情。然后可以永远开心，舟舟包是最棒的耶');
     } else {
       alert("笨蛋，再想想捏");
     }
