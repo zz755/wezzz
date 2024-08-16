@@ -1,0 +1,28 @@
+body {
+  background-color: pink;
+  position: relative;
+}
+
+.heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 之前的爱心绘制代码 */
+}
+
+/* 假设玫瑰使用图片表示 */
+.rose {
+  position: absolute;
+  top: -50px;
+  animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 100%;
+  }
+}
